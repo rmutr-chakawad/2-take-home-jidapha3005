@@ -18,9 +18,16 @@ class ProductItem extends StatelessWidget {
           });
       },
       child: ListTile(
-        leading: Text(product.productName),
-        title: Text(product.price.toStringAsFixed(2), textAlign: TextAlign.right,),
-        trailing: const Icon(Icons.chevron_right),
+        title: Text(
+          product.productName,
+          style: const TextStyle(fontSize: 20,color:  Color.fromARGB(255, 10, 10, 10)), // ปรับขนาดและใส่สี
+        ),
+        trailing: Text(
+          '${product.price.toStringAsFixed(2)}',
+          style: const TextStyle(fontSize: 18, color: Color.fromARGB(255, 10, 10, 10)), // ปรับขนาดและใส่สี
+        
+        ),
+       
       ),
     );
   }
