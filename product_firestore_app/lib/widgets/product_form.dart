@@ -38,7 +38,7 @@ class _ProductFormState extends State<ProductForm> {
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
-          mainAxisSize: MainAxisSize.min, // ให้ Column ปรับขนาดอัตโนมัติ
+          mainAxisSize: MainAxisSize.min, // ให้ ช่องใส่ข้อความปรับขนาดอัตโนมัติ
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Center(
@@ -100,7 +100,7 @@ class _ProductFormState extends State<ProductForm> {
         priceController.clear();
 
         if (mounted) { 
-          Navigator.of(context).pop(); // ปิด Dialog อย่างปลอดภัย
+          Navigator.of(context).pop(); // ปิด Dialog 
         }
       },
       child: const Text('เพิ่ม'),
